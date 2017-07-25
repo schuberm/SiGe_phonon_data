@@ -1,0 +1,15 @@
+Phonons of SiGe
+&INPUTPH
+ outdir = 'output'
+ prefix = 'SiGe'
+ fildyn = 'output/SiGe.dyn_q'
+ fildvscf = 'dvscf_q'
+ tr2_ph = 1.0d-20
+ amass(1) = 31.026564
+ epsil = .true.
+ ldisp = .true.
+ nq1 = 6
+ nq2 = 6
+ nq3 = 6
+/
+0.0 0.0 0.0

@@ -1,0 +1,31 @@
+&CONTROL
+ prefix = 'SiGe'
+ calculation = 'scf'
+ tstress = .true.
+ tprnfor = .true.
+ outdir = 'output'
+ pseudo_dir = '../../pseudo/'
+/
+&SYSTEM
+ ibrav = 2
+ celldm(1) = 10.23234
+ nat = 2
+ ntyp = 1
+ ecutwfc = 50.0
+/
+&ELECTRONS
+ electron_maxstep = 100
+ conv_thr = 1.0D-12
+ mixing_beta = 0.65
+ mixing_mode = 'plain'
+ mixing_beta = 0.65
+ mixing_ndim = 24
+ diagonalization = 'cg'
+/
+ATOMIC_SPECIES
+ Si 31.026564 Si93.4Ge6.6.pz-n-nc.UPF
+ATOMIC_POSITIONS crystal
+ Si 0.000000000 0.000000000 0.000000000
+ Si 0.250000000 0.250000000 0.250000000
+K_POINTS automatic
+ 12 12 12 0 0 0

@@ -1,0 +1,23 @@
+ &control
+    calculation='scf',
+    prefix='ge',
+    pseudo_dir = '../pp/',
+    outdir='./',
+ /
+ &system
+    ibrav=  2, 
+    celldm(1) =10.69, 
+    nat=  2, ntyp= 1,
+    ecutwfc =24.0,
+ /
+ &electrons
+    conv_thr =  1.0d-10
+ /
+ATOMIC_SPECIES
+Ge 72.64   Ge.pz-bhs.UPF 
+ATOMIC_POSITIONS crystal
+Ge 0.000000000   0.000000000   0.000000000
+Ge 0.25 0.25 0.25
+K_POINTS AUTOMATIC
+16 16 16 1 1 1
+

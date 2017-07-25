@@ -1,0 +1,11 @@
+--
+&inputph
+  tr2_ph   =  1.0d-14
+  prefix   = 'ge'
+  outdir   = './'
+  fildyn   = 'ge.dyn'
+  ldisp=.true.
+  epsil=.true.
+  nq1=6, nq2=6, nq3=6
+ /
+0.0 0.0 0.0
